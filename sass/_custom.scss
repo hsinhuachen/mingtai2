@@ -152,6 +152,7 @@ a:focus{
         line-height: 128%;
         padding-top: 23px;
         padding-left: 70px;
+        text-align: center;
     }
 }
 
@@ -162,7 +163,7 @@ a:focus{
     &:after{
         content: '';
         position: absolute;
-        left: calc((100vw - 40px) / 2);
+        left: calc((100% - 40px) / 2);
         bottom: -30px;
         width: 0; 
         height: 0; 
@@ -190,7 +191,9 @@ a:focus{
     border-radius: 30px;
     margin-top: 30px;
     padding: 5px 25px 3px 25px;
-    box-shadow: 2px 5px #213E6B;
+    box-shadow: 2px 5px darken(#92BFF0,30);
+    border: none;
+    background: #92BFF0;
     transition: -webkit-box-shadow .2s ease;
     transition: box-shadow .2s ease;
     transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
@@ -203,6 +206,8 @@ a:focus{
         position: relative;
         top: 5px;
         box-shadow: inset 0 0 0 0 transparent;
+        border: none;
+        background: #92BFF0;
     }
 }
 
@@ -419,7 +424,7 @@ a:focus{
         background-position: bottom right -360px;
     }
     @media (max-width: 576px) {
-        background: url("../imgs/bg_03-m-100.jpg") no-repeat right bottom;
+        background: url("../imgs/bg_03-m@2x-100.jpg") no-repeat right bottom;
         background-size: cover;
     }
 }
@@ -483,7 +488,7 @@ a:focus{
     }
     .wrap{
         color: #5E6875;
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         font-weight: 700;
         line-height: 134%;
         width: 200px;
@@ -535,7 +540,7 @@ a:focus{
     .note-item-info{
         position: relative;
         color: #5E6875;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         line-height: 136%;
         padding: 10px 15px;
         background: #FFF;
@@ -678,7 +683,7 @@ a:focus{
         .wrap{
             width: 180px;
             height: 180px;
-            font-size: 1.5rem;  
+            font-size: 1.6rem;  
         }
     }
 
@@ -704,7 +709,7 @@ a:focus{
             font-size: 1.9rem;
         }
         .note-item-info, .note-item-info p{
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
         br{
             display: none;
