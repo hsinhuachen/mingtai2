@@ -10044,6 +10044,7 @@ a:focus {
   .banner .gobtn {
     position: absolute;
     left: 30%;
+    top: auto;
     bottom: 60px;
   }
 
